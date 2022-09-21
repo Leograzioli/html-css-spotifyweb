@@ -319,24 +319,39 @@
                 </div>
                 
                 <div class="player">
-                    <div class="icons flexbox justify-center ">
-                        <i class="fa-solid fa-shuffle"></i>
-                        <i class="fa-solid fa-backward-step"></i>
-                        <i class="fa-regular fa-circle-play fa-2xl"></i>
-                        <i class="fa-solid fa-forward-step"></i>
-                        <i class="fa-solid fa-arrow-rotate-right"></i>
-                    </div>
+                    
+                        <ul class="icons flexbox justify-center">
+                            <li>
+                                <i class="fa-solid fa-shuffle fa-sm"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-backward-step fa-sm"></i>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-play fa-2xl"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-forward-step fa-sm"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-arrow-rotate-right fa-sm"></i>
+                            </li>
+                        </ul>
+                    
                     <div class="play-bar flexbox justify-center">
                         <div class="fontsize1 color-white"> 0:25</div>
-                        <div class="mg-left1 color-gray"> -------------------------------</div>
+                        <div class="range mg-left1 color-gray"> 
+                            <input type="range" min="1" max="100" value="30" class="slider" id="myRange">
+                        </div>
                         <div class="fontsize1 mg-left1 color-white"> 4:35</div>
                     </div>
                 </div>
 
                 <div class="mix flexbox ">
-                    <i class="fa-solid fa-bars fa-sm"></i>
-                    <i class="fa-solid fa-desktop fa-sm"></i>
-                    <i class="fa-solid fa-volume-high fa-sm"></i>
+                    <i class="fa-solid fa-bars fa-xs"></i>
+                    <i class="fa-solid fa-desktop fa-xs"></i>
+                    <i class="fa-solid fa-volume-high fa-xs"></i>
+                    <input type="range" min="1" max="100" value="30" class="slider" id="myRange">
                     <div class="color-white"></div>
                 </div>
             </div>

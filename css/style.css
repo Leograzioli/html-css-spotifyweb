@@ -273,6 +273,7 @@ footer {
 .player {
     width: 60%;
 }
+
 .icons {
     height: 50px;
     align-items: center;
@@ -287,6 +288,14 @@ footer {
     align-items: center;    
 }
 
+.play-bar .range {
+    width: 50%;
+}
+
+.play-bar .slider {
+    width: 100%;
+}
+
 .mix {
     height: 80px;
     width: 20%;
@@ -296,6 +305,14 @@ footer {
 .mix i {
     color: var(--color-white);
     margin-right: 1rem;
+}
+
+.mix .range {
+    width: 30%;
+}
+
+.mix .slider {
+    width: 40%;
 }
 
 
@@ -377,7 +394,7 @@ footer {
 
     .mix {
         display: block;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     .mix i {
