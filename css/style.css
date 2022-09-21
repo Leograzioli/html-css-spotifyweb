@@ -48,6 +48,10 @@ img {
     justify-content: space-between;
 }
 
+.align-center {
+    align-items: center;
+}
+
 :root {
     --color-dark-blue: #141922;
     --color-gray: #787a7f;
@@ -55,7 +59,6 @@ img {
     --color-white: #ffffff;
     --color-black: #000000;
 }
-
 
 /* backgroud color  */
 .bg-black {
@@ -86,6 +89,10 @@ img {
     margin-bottom: 3rem;
 }
 
+.mg-left1 {
+    margin-left: 2rem;
+}
+
 /* padding  */
 .pd-tp1 {
     padding-top: 1rem;
@@ -106,8 +113,12 @@ img {
 
 /* text  */
 
-.fonsize {
+.fontsize {
     font-size: 0.8rem;
+}
+
+.fontsize1 {
+    font-size: 0.7rem;
 }
 
 /* image radius  */
@@ -164,8 +175,6 @@ header a:hover {
     justify-content: space-between;
     padding: 1.5rem 1.5rem 0;
 }
-
-
 
 .col-left img.logo {
     width: 150px;
@@ -245,11 +254,56 @@ footer {
     height: 80px;
 }
 
+.on-play i {
+    color: var(--color-gray);
+    margin-right: 1rem ;
+}
+
+.on-play {
+    height: 80px;
+    align-items: center;
+}
+
+.on-play img {
+    height: 40px;
+    margin: 0 1rem;
+    width: 20%;
+}
+
+.player {
+    width: 60%;
+}
+.icons {
+    height: 50px;
+    align-items: center;
+}
+
+.icons i {
+    color: var(--color-white);
+    margin-left: 30px;
+}
+
+.play-bar {
+    align-items: center;    
+}
+
+.mix {
+    height: 80px;
+    width: 20%;
+    align-items: center;
+}
+
+.mix i {
+    color: var(--color-white);
+    margin-right: 1rem;
+}
+
 
 /******* MEDIA QUERY  *******/
 /* Small desktop 1100px  */
 @media screen and (max-width: 1100px) {
 
+    /******* MAIN  *******/
     /* right col  */
     .row {
         flex-wrap: wrap;
@@ -269,15 +323,21 @@ footer {
 /* tablet 700 px */
 @media screen and (max-width: 700px) {
     
-        /* right col  */
-        .row {
-            flex-wrap: wrap;
-    
-        }
-        .col-right .col {
-            width: calc(100% / 2 - 2rem );
-            margin-right: 2rem;
-        }
+    /******* MAIN  *******/
+    /* right col  */
+    .row {
+        flex-wrap: wrap;
+
+    }
+    .col-right .col {
+        width: calc(100% / 2 - 2rem );
+        margin-right: 2rem;
+    }
+
+    /******* FOOTER  *******/
+    .block{
+        display: block;
+    }
 }
 
 /* mobile 600px */
@@ -308,4 +368,19 @@ footer {
     .col-right {
         width: calc(100% - 80px);
     }
-}
+
+    /******* FOOTER  *******/
+    .icons i {
+        color: var(--color-white);
+        margin-left: 20px;
+    }
+
+    .mix {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .mix i {
+        margin-left: 1rem;
+    }
+}   
