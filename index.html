@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify</title>
 </head>
 <body>
@@ -19,14 +20,68 @@
         </header>
 
         <!-- main start  -->
-        <main>
+        <main class="bg-dark-blue">
             <div class="container flexbox">
                 <div class="col-left bg-black">
-                    
+                    <div class="col-top">
+                        <!-- logo -->
+                        <img class="mg-bt2 logo" src="img/logo.svg" alt="">
+                        
+                        <!-- list -->
+                        <ul class="mg-bt2 color-gray">
+                            <li class="color-white">
+                                <img src="img/home.svg" alt="">
+                                Home
+                            </li>
+
+                            <li>
+                                <img src="img/search.svg" alt="">
+                                Cerca
+                            </li>
+
+                            <li>
+                                <img src="img/libreria.svg" alt="">
+                                La tua libreria
+                            </li>
+                        </ul>
+                        
+                        <!-- playlist  -->
+                        <h4 class="mg-bt1">PLAYLIST</h4>
+                        <ul class="color-gray">
+                            <li>
+                                <i class="fa-solid fa-square-plus fa-3x"></i>
+                            Crea Playlist
+                            </li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-bottom">
+
+                        <div class="user">
+
+                            <div class="install mg-bt1 color-gray">
+                                <img src="img/download.svg" alt="">
+                                Installa app
+                            </div>
+
+                            <hr class="mg-bt1">
+                            
+                            <img class="bottom-img"src="img/profile.svg" alt="">
+                            
+                            <span>John Doe</span>
+                            
+                        </div>
+                    </div>
                 </div>
-                <div class="col-right bg-dark-blue">
-                    
-                </div>
+
+                <div class="col-right bg-dark-blue"></div>
             </div>
         </main>
 
