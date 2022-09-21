@@ -152,18 +152,20 @@ header a:hover {
 }
 
 /* left col  */
+
+.small-menu {
+    display: none;
+}
 .col-left {
     width: 250px;
     height: calc(100vh - 80px);
     overflow: hidden;
-}
-
-.col-left  {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 1.5rem 1.5rem 0;
 }
+
+
 
 .col-left img.logo {
     width: 150px;
@@ -280,5 +282,30 @@ footer {
 
 /* mobile 600px */
 @media screen and (max-width: 600px) {
+    /******* HEADER *******/
+    header {
+        left:80px
+    }
 
+    /* left col  */
+    .col-left {
+        width: 80px;
+    }
+
+    .big-menu {
+        display: none;
+    }
+
+    .small-menu {
+        display: flex;
+    }
+
+    .col-left img.logo {
+        width: 50px;
+    }
+
+    /* right col  */
+    .col-right {
+        width: calc(100% - 80px);
+    }
 }
