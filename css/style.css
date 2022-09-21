@@ -135,6 +135,7 @@ header {
     right: 0;
     left: 250px;
     height: 80px;
+    z-index: 999;
     line-height: 80px;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: end;
@@ -167,6 +168,14 @@ header a:hover {
 .small-menu {
     display: none;
 }
+
+.col-top li:hover {
+    color: var(--color-white);
+}
+
+.col-top li:hover img {
+    opacity: 1;
+}
 .col-left {
     width: 250px;
     height: calc(100vh - 80px);
@@ -186,6 +195,10 @@ header a:hover {
     margin-bottom: 0.5rem;    
 }
 
+.col-left li:hover  {
+    color: white;
+}
+
 .col-left li img {
     opacity: 0.5;
     width: 30px;
@@ -194,11 +207,11 @@ header a:hover {
 }
 
 .col-left i {
-vertical-align: middle;
-margin-right: 5px;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
-.col-left .bottom-img {
+.col-bottom .bottom-img {
     background-color: #787a7f;
     border-radius: 50%;
     width: 25px;
@@ -206,15 +219,23 @@ margin-right: 5px;
     margin-right: 5px;
 }
 
-.col-left .install img {
+.col-bottom .install img {
     opacity: 0.5;
     width: 20px;
     vertical-align: middle;
     margin-right: 5px;
 }
 
-.col-left .user {
+.col-bottom .user {
     padding-bottom: 15px;
+}
+
+.user .install:hover {
+    color: var(--color-white);
+}
+
+.user .install:hover img {
+    opacity: 1;
 }
 
 /* right col  */
@@ -232,6 +253,10 @@ margin-right: 5px;
 
 .col-right nav li {
     margin-right: 1rem;
+}
+
+.col-right li a:hover {
+    color: var(--color-white) ;
 }
 
 .col-right .col {
@@ -254,9 +279,8 @@ footer {
     height: 80px;
 }
 
-.on-play i {
-    color: var(--color-gray);
-    margin-right: 1rem ;
+footer i:hover {
+    transform:scale(1.2);
 }
 
 .on-play {
@@ -264,14 +288,23 @@ footer {
     align-items: center;
 }
 
+.on-play i {
+    color: var(--color-gray);
+    margin-right: 1rem ;
+}
+
 .on-play img {
     height: 40px;
     margin: 0 1rem;
-    width: 20%;
+    width: 25%;
+}
+
+.on-play .album {
+    width: 60%;
 }
 
 .player {
-    width: 60%;
+    width: 50%;
 }
 
 .icons {
@@ -298,7 +331,7 @@ footer {
 
 .mix {
     height: 80px;
-    width: 20%;
+    width: 25%;
     align-items: center;
 }
 
@@ -353,7 +386,7 @@ footer {
 
     /******* FOOTER  *******/
     .block{
-        display: block;
+        flex-wrap: wrap;
     }
 }
 
@@ -393,10 +426,11 @@ footer {
     }
 
     .mix {
-        display: block;
+        flex-wrap: wrap;
         margin-top: 5px;
+        margin-left: 15px;
     }
-
+    
     .mix i {
         margin-left: 1rem;
     }
