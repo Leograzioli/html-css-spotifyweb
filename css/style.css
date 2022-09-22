@@ -52,6 +52,10 @@ img {
     align-items: center;
 }
 
+.position-relative {
+    position: relative;
+}
+
 :root {
     --color-dark-blue: #141922;
     --color-gray: #787a7f;
@@ -391,6 +395,49 @@ footer i:hover {
     align-items: center;    
 }
 
+.play-bar .volume-bar {
+    width: 530px;
+    border: 3px solid rgb(99, 99, 99);
+    border-radius: 50px;
+}
+
+.play-bar .volume-above {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    border: 3px solid rgb(190, 190, 190);
+    border-radius: 50px;
+}
+
+.play-bar .volume-hv{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    border: 3px solid #adff2f;
+    border-radius: 50px;
+}
+
+.play-bar .player-ball {
+    display: none;
+    position: absolute;
+    top: -4px;
+    left: 140px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
+
+.play-bar .volume:hover .volume-hv {
+    display: block;
+}
+.play-bar .volume:hover .player-ball {
+    display: block;
+}
+
 .play-bar .range {
     width: 50%;
 }
@@ -401,7 +448,7 @@ footer i:hover {
 
 .mix {
     height: 80px;
-    width: 200px;
+    width: 250px;
     align-items: center;
     justify-content: end;
     padding-right: 1rem;
@@ -418,6 +465,49 @@ footer i:hover {
 
 .mix .slider {
     width: 40%;
+}
+
+.mix .volume-bar {
+    width: 150px;
+    border: 3px solid rgb(99, 99, 99);
+    border-radius: 50px;
+}
+
+.mix .volume-above {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    border: 3px solid rgb(190, 190, 190);
+    border-radius: 50px;
+}
+
+.mix .volume-hv{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    border: 3px solid #adff2f;
+    border-radius: 50px;
+}
+
+.mix .player-ball {
+    display: none;
+    position: absolute;
+    top: -4px;
+    left: 40px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
+
+.mix .volume:hover .volume-hv {
+    display: block;
+}
+.mix .volume:hover .player-ball {
+    display: block;
 }
 
 
