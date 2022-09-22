@@ -148,7 +148,7 @@ header a {
     border-radius: 30px;
     padding: 0.5rem 2rem;
     line-height: normal;
-    margin-right:15px;
+    margin-right:20px;
     font-size: 0.8rem;
     font-weight: bold;
 }
@@ -352,13 +352,13 @@ footer i:hover {
     transform:scale(1.2);
 }
 
+/* on play  */
 .on-play {
     height: 80px;
     align-items: center;
+    width: 200px;
 }
 
-
-/* on play  */
 .on-play i {
     color: var(--color-gray);
     margin-right: 1rem ;
@@ -367,7 +367,6 @@ footer i:hover {
 .on-play img {
     height: 40px;
     margin: 0 1rem;
-    width: 25%;
 }
 
 .on-play .album {
@@ -402,7 +401,7 @@ footer i:hover {
 
 .mix {
     height: 80px;
-    width: 15%;
+    width: 200px;
     align-items: center;
     justify-content: end;
     padding-right: 1rem;
@@ -496,7 +495,7 @@ footer i:hover {
     /******* FOOTER  *******/
     .icons i {
         color: var(--color-white);
-        margin-left: 20px;
+        margin: 0 10px;
     }
 
     .mix {
