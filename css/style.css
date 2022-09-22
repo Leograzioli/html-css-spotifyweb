@@ -181,10 +181,17 @@ header a:hover {
     opacity: 1;
 }
 
-.border-home {
-    border-left: 2px solid #adff2f;
-    margin-left: -1.5rem;
-    padding-left: 1rem;
+.col-top li {
+    position: relative;
+}
+
+.col-top li a:focus::before {
+    content: "|";
+    position: absolute;
+    top: 0;
+    left: -25px;
+    color: #adff2f;
+    font-size: 2rem;
 }
 
 .col-left {
@@ -256,10 +263,6 @@ header a:hover {
     padding: 80px 2rem 0;
     overflow-y: auto;
 }
-
-/* .border-evidenza {
-    border-bottom: 2px solid #adff2f;
-} */
 
 .col-right nav {
     width: 100%;
