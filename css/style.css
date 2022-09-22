@@ -357,6 +357,8 @@ footer i:hover {
     align-items: center;
 }
 
+
+/* on play  */
 .on-play i {
     color: var(--color-gray);
     margin-right: 1rem ;
@@ -383,7 +385,7 @@ footer i:hover {
 
 .icons i {
     color: var(--color-white);
-    margin-left: 30px;
+    margin: 0 15px;
 }
 
 .play-bar {
@@ -402,6 +404,8 @@ footer i:hover {
     height: 80px;
     width: 15%;
     align-items: center;
+    justify-content: end;
+    padding-right: 1rem;
 }
 
 .mix i {
@@ -456,6 +460,7 @@ footer i:hover {
     /******* FOOTER  *******/
     .block{
         flex-wrap: wrap;
+        margin-left: 0;
     }
 }
 
