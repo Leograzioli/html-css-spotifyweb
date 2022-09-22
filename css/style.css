@@ -257,9 +257,9 @@ header a:hover {
     overflow-y: auto;
 }
 
-.border-evidenza {
+/* .border-evidenza {
     border-bottom: 2px solid #adff2f;
-}
+} */
 
 .col-right nav {
     width: 100%;
@@ -268,10 +268,21 @@ header a:hover {
 
 .col-right nav li {
     margin-right: 1rem;
+    position: relative;
 }
 
 .col-right li a:hover {
     color: var(--color-white) ;
+}
+
+.col-right ul li a:focus::after {
+    content: '______';
+    position: absolute;
+    color: #adff2f;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%);
+
 }
 
 .col-right .col {
