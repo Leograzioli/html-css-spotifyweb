@@ -380,9 +380,9 @@ footer i:hover {
 
 /* on play  */
 .on-play {
+    width: 200px;
     height: 80px;
     align-items: center;
-    width: 200px;
 }
 
 .on-play i {
@@ -410,7 +410,7 @@ footer i:hover {
 
 /* play bar  */
 .player {
-width: 55%;
+    width: 60%;
 }
 
 .icons {
@@ -464,6 +464,10 @@ width: 55%;
 
 .play-bar .range {
     width: 70%;
+}
+
+.play-bar .minute {
+    margin-left: 1rem;
 }
 
 /* mixer */
@@ -540,8 +544,7 @@ width: 55%;
 
     .col-right .card-img img {
         min-width: 90px;
-    }
-    
+    } 
 }
 
 /* tablet 700 px */
@@ -562,17 +565,11 @@ width: 55%;
     /* on play  */
     .block{
         flex-wrap: wrap;
-        padding-bottom: 1rem;
-    }
-
-    .album {
-        padding-bottom: 1rem;
     }
 
     .on-play .playing-now {
         margin-right: 0;
     }
-
 }
 
 /* mobile 600px */
@@ -608,11 +605,17 @@ width: 55%;
     /* on play  */
     .on-play {
         width: 20%;
+        align-items: flex-start;
+        padding-top: 0.5rem;
     }
    
-    /* play bar  */
+    /* player  */
+    .player {
+        margin-left: 3rem;
+    }
+
     .icons i {
-        margin: 0 10px;
+        margin: 0 5px;
     }
     
     /* mixer  */
@@ -620,7 +623,6 @@ width: 55%;
         width: 20%;
         flex-wrap: wrap;
         margin-top: 5px;
-        margin-left: 15px;
     }
     
     .mix i {
