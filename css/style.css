@@ -402,6 +402,7 @@ footer i:hover {
     width: 55%;
 }
 
+/* play bar  */
 .icons {
     height: 50px;
     align-items: center;
@@ -412,7 +413,6 @@ footer i:hover {
     margin: 0 15px;
 }
 
-/* play bar  */
 .play-bar {
     align-items: center;    
 }
@@ -588,11 +588,17 @@ footer i:hover {
     }
 
     /******* FOOTER  *******/
+    /* on play  */
+    .on-play {
+        width: 20%;
+    }
+    
+    /* play bar  */
     .icons i {
-        color: var(--color-white);
         margin: 0 10px;
     }
-
+    
+    /* mixer  */
     .mix {
         width: 20%;
         flex-wrap: wrap;
