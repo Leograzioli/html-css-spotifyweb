@@ -62,6 +62,7 @@ img {
     --color-dark-gray: #282828;
     --color-white: #ffffff;
     --color-black: #000000;
+    --color-lime: #adff2f;
 }
 
 /* backgroud color  */
@@ -190,7 +191,7 @@ header a:hover {
     position: absolute;
     top: 0;
     left: -25px;
-    color: #adff2f;
+    color: var(--color-lime);
     font-size: 2rem;
 }
 
@@ -281,7 +282,7 @@ header a:hover {
 .col-right ul li a:focus::after {
     content: '______';
     position: absolute;
-    color: #adff2f;
+    color: var(--color-lime);
     top: 8px;
     left: 50%;
     transform: translate(-50%);
@@ -405,6 +406,7 @@ footer i:hover {
     margin: 0 15px;
 }
 
+/* play bar  */
 .play-bar {
     align-items: center;    
 }
@@ -424,29 +426,19 @@ footer i:hover {
     border-radius: 50px;
 }
 
-.play-bar .volume-hv{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    border: 3px solid #adff2f;
-    border-radius: 50px;
-}
-
 .play-bar .player-ball {
     display: none;
     position: absolute;
     top: -4px;
-    left: 140px;
+    left: 29%;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: var(--color-white);
 }
 
-.play-bar .volume:hover .volume-hv {
-    display: block;
+.play-bar .volume:hover .volume-above  {
+    border: 3px solid var(--color-lime);
 }
 .play-bar .volume:hover .player-ball {
     display: block;
@@ -460,6 +452,7 @@ footer i:hover {
     width: 100%;
 }
 
+/* mixer */
 .mix {
     height: 80px;
     width: 250px;
@@ -500,29 +493,19 @@ footer i:hover {
     border-radius: 50px;
 }
 
-.mix .volume-hv{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40%;
-    border: 3px solid #adff2f;
-    border-radius: 50px;
-}
-
 .mix .player-ball {
     display: none;
     position: absolute;
     top: -4px;
-    left: 50px;
+    left: 36%;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: var(--color-white);
 }
 
-.mix .volume:hover .volume-hv {
-    display: block;
+.mix .volume:hover .volume-above {
+    border: 3px solid var(--color-lime);
 }
 .mix .volume:hover .player-ball {
     display: block;
