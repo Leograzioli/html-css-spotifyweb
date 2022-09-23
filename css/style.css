@@ -215,7 +215,7 @@ header a:hover {
 }
 
 .col-left li:hover  {
-    color: white;
+    color: var(--color-white);
 }
 
 .col-left li img {
@@ -231,9 +231,10 @@ header a:hover {
 }
 
 .col-bottom .bottom-img {
-    background-color: #787a7f;
+    background-color: var(--color-gray);
     border-radius: 50%;
     width: 25px;
+    height: 25px;
     vertical-align: middle;
     margin-right: 5px;
 }
@@ -344,12 +345,16 @@ header a:hover {
     display: block;
 }
 
-.col-right .col:hover  .img-hover {
+.col-right .card-img:hover  .img-hover {
     display: block;
 }
 
 .col-right .col:hover i {
     display: block;
+}
+
+.col-right .col {
+    cursor: pointer;
 }
 
 .col-right .card-img img {
@@ -369,6 +374,7 @@ footer {
 
 footer i:hover {
     transform:scale(1.2);
+    cursor: pointer;
 }
 
 /* on play  */
@@ -442,6 +448,7 @@ footer i:hover {
 }
 .play-bar .volume:hover .player-ball {
     display: block;
+    cursor: grab;
 }
 
 .play-bar .range {
@@ -468,10 +475,6 @@ footer i:hover {
 
 .mix .range {
     width: 30%;
-}
-
-.mix .slider {
-    width: 40%;
 }
 
 .mix .volume {
@@ -509,6 +512,7 @@ footer i:hover {
 }
 .mix .volume:hover .player-ball {
     display: block;
+    cursor: grab;
 }
 
 
