@@ -299,6 +299,7 @@ header a:hover {
 
 .img-wrapper {
     position: relative;
+    min-width: 120px;
 }
 
 .img-hover {
@@ -545,6 +546,10 @@ footer i:hover {
     .col-right .card-img img {
         min-width: 90px;
     } 
+
+    .img-wrapper { 
+        min-width: 90px;
+    }
 }
 
 /* tablet 700 px */
