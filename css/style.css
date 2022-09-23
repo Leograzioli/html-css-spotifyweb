@@ -282,10 +282,11 @@ header a:hover {
 }
 
 .col-right ul li a:focus::after {
-    content: '______';
+    content: '___';
+    font-size: 2rem;
     position: absolute;
     color: var(--color-lime);
-    top: 8px;
+    top: 0;
     left: 50%;
     transform: translate(-50%);
 
