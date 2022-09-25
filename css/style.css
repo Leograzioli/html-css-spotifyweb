@@ -628,7 +628,7 @@ footer i:hover {
     .mix {
         width: 20%;
         flex-wrap: wrap;
-        margin-top: 5px;
+        padding-top: 5px;
     }
     
     .mix i {
