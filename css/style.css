@@ -461,6 +461,9 @@ footer i:hover {
 
 .play-bar .volume:hover .player-ball {
     display: block;
+}
+
+.play-bar .volume:hover .player-ball:active {
     cursor: grab;
 }
 
@@ -520,12 +523,15 @@ footer i:hover {
     background-color: var(--color-white);
 }
 
+.mix .player-ball:active {
+    cursor: grab;
+}
+
 .mix .volume:hover .volume-above {
     border: 3px solid var(--color-lime);
 }
 .mix .volume:hover .player-ball {
     display: block;
-    cursor: grab;
 }
 
 
